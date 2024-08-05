@@ -1,4 +1,3 @@
-
 html, body {
     margin: 0;
     padding: 0;
@@ -30,39 +29,14 @@ html, body {
 }
 
 .press-btn {
-    background-color: #ff55aa;
-    color: pink;
-    border: none;
+    width: 90px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
     cursor: pointer;
-    font-size: 0; /* Ẩn văn bản bên trong */
-    width: 40px;
-    height: 40px; /* Kích thước nút */
-    display: inline-block;
-    transform: rotate(-45deg);
     position: absolute;
-    top: 50%; /* Căn giữa theo chiều dọc */
-    left: 50%; /* Căn giữa theo chiều ngang */
-    transform: translate(-50%, -50%) rotate(-45deg); /* Dịch chuyển vào chính giữa và xoay */
-}
-
-.press-btn:before,
-.press-btn:after {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background: #ff55aa;
-}
-
-.press-btn:before {
-    top: -20px;
-    left: 0;
-}
-
-.press-btn:after {
-    left: 20px;
-    top: 0;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center with translate */
+    z-index: 1; /* Ensure it's above other elements */
 }
 
 .heart {
@@ -121,6 +95,68 @@ html, body {
     object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ khung hình */
 }
 
+.play-video-btn {
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    background-color: #ff55aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 3px;
+    border-radius: 5px;
+    display: none;
+}
+
+.birthday-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+/* ... Existing CSS ... */
+
+.thank-you-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    background-color: #ff55aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: none;
+    transform: translateX(50%);
+}
+
+.thank-you-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* ... Existing CSS ... */
+
+.reload-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 139px;
+    background-color: #a6a6a6;
+    color: white;
+    border: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
 
 @keyframes heartbeat {
     0% {
