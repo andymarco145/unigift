@@ -9,5 +9,5 @@ function showMessage() {
     setTimeout(function() {
         heart.style.display = "none";
         messageCard.style.transform = "translate(-50%, -50%) scale(1)";
-    }, 10000); // Hiệu ứng trái tim động và di chuyển trong 10 giây
+    }, 6000); // Hiệu ứng trái tim động và di chuyển trong 10 giây
 }
